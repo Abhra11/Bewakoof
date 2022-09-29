@@ -136,10 +136,43 @@ import React from "react";
 
     const data4=[
         {
-            id:'1',
-
+            id:1,
+            url:'https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-vests-men21-1661708908.jpg'
+        },
+        {
+            id:2,
+            url:'https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-new-pyjamas-1664210626.png'
+        },
+        {
+            id:3,
+            url:'https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-boxers-men1-1664210626.jpg'
+        },
+        {
+            id:4,
+            url:'https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-new-sliders---Copy-1664210627.jpg'
         }
     ]
+
+    const data5=[
+        {
+            id:1,
+            url:'https://images.bewakoof.com/uploads/grid/app/me-shirt-men-1658682131.jpg'
+        },
+        {
+            id:2,
+            url:'https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Bottomwear-Men-1663680166.jpg'
+        },
+        {
+            id:3,
+            url:'https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Bottomwear-Men-1663680166.jpg'
+        },
+        {
+            id:4,
+            url:'https://images.bewakoof.com/uploads/grid/app/undrdawg-mid-banner2-1663930062.jpg'
+        }
+    ]
+
+    
 
 function Data1(){
     return <>
@@ -184,9 +217,47 @@ function Data3(){
                 
             ))}
         </div>
+
+        
+    </>
+}
+
+function Data4(){
+   
+    return <>
+        <div style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)',width:'100.5%', }}>
+            {data4.map(ele=>(
+                <div>
+                    <img width={'99%'} key={ele.id} src={ele.url} alt="" />
+                </div>
+                    
+               
+                
+            ))}
+        </div>
+
+        
+    </>
+}
+
+function Data5(){
+   
+    return <>
+        <div style={{display:'grid', gridTemplateColumns:'repeat(2,1fr)',width:'100.5%', }}>
+            {data5.map(ele=>(
+                <div>
+                    <img width={'99%'} key={ele.id} src={ele.url} alt="" />
+                </div>
+                    
+               
+                
+            ))}
+        </div>
+
+        
     </>
 }
 
 
 
-export {Data1,Data2,Data3};
+export {Data1,Data2,Data3, Data4,Data5};
