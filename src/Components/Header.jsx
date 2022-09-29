@@ -1,8 +1,8 @@
 import React from "react";
-import { Input,Stack,InputGroup, InputLeftElement,InputRightElement } from '@chakra-ui/react'
+import { Input,Stack,InputGroup } from '@chakra-ui/react'
 
 function Header(){
-  return <>
+  return <div id="nav">
 
   <div style={{display:"flex", justifyContent:'space-around', backgroundColor:"#eeeeee",height:'2em',alignItems:'center'}}>
       <div style={{display:'flex',gap:'30px',fontSize:'11px', justifyContent:"space-between", color:'#48647a'}}>
@@ -49,7 +49,7 @@ function Header(){
 
   </div>
      
-    </>   
+    </div>   
 }
 
 export default Header;

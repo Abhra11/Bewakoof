@@ -1,13 +1,16 @@
 .App {
-  padding: 0px;
+    padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    width: 98%;
+    margin: auto;
+    font-family: montserrat, sans-serif;
     
 }
 
 #slider{
   background-color: #e8f3e5;
-    height: 40px;
+    height: 50px;
     color: black;
     display: grid;
     
@@ -19,6 +22,8 @@
 #slider>p{
   
   animation: blackslide 5s linear infinite;
+  
+  overflow: hidden;
 }
 
 @keyframes blackslide{
@@ -26,8 +31,61 @@
     margin-left: 100%
  }
 
+
  
 }
+
+
+
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+#nav{
+
+  position: sticky;
+  top: 0px;
+  background: white;
+  z-index: 2;
+  
+ 
+}
+
+
+
+
+
+
 
 
 
