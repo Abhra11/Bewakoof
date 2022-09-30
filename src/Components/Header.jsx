@@ -1,7 +1,9 @@
 import React from "react";
-import { Input,Stack,InputGroup } from '@chakra-ui/react'
+import { Input,Stack,InputGroup } from '@chakra-ui/react';
+import { Link } from "react-router-dom";
 
 function Header(){
+ 
   return <div id="nav">
 
   <div style={{display:"flex", justifyContent:'space-around', backgroundColor:"#eeeeee",height:'2em',alignItems:'center'}}>
@@ -21,7 +23,15 @@ function Header(){
 
   <div style={{display:"flex", justifyContent:'space-around', borderBottom:"1px solid"}}>
     <div style={{display:'flex',gap:'30px', justifyContent:"space-between"}}>
-      <img width="200px" src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg" alt="" />
+      
+      <Link to="/">
+        <img width="200px" src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg" alt="" />
+      </Link>
+      
+      
+      
+
+      
       <p>MEN</p>
       <p>WOMEN</p>
       <p>MOBILE COVERS</p>
@@ -37,7 +47,8 @@ function Header(){
   
       </Stack>
       <p>|</p>
-      <p>Login</p>
+      <Link to='/login'> <p>Login</p></Link>
+      
       <p>♡</p>
       <img  height={'35px'} width="40px" src="https://cdn-icons-png.flaticon.com/128/126/126515.png" alt="" />
       <img height={'35px'} width={'40px'} src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="" />

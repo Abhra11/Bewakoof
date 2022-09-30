@@ -1,0 +1,79 @@
+.loginD{
+    display: flex;
+    gap: 5%;
+    /* border: 1px solid; */
+    justify-content: center;
+    margin-top: 50px;
+    height: 650px;
+}
+.loginPart{
+    margin-top: 40px;
+   text-align: center;
+    
+    
+    /* border: 1px solid; */
+    width: 40%
+}
+
+.loginPart>p{
+    font-size: 18px;
+    color: #afa5a0;
+}
+.logo{
+
+    background-color:white;
+    background-image: linear-gradient(white,#fff4c5);
+    padding-left: 60px;
+    width:50%;
+    
+    
+   
+    
+
+}
+
+
+.orLine{
+    margin-top: 30px;
+}
+.phn{
+    /*  */
+    width: 450px;
+   
+    height:43px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 30px;
+    border: 1px solid;
+    
+}
+.phn>p{
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+
+.social{
+        display: flex;
+       
+        width: 83%;
+        margin: auto;
+         
+    }
+
+  .goo{
+    border: 1px solid;
+    width: 200px;
+   
+    height:43px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 30px;
+    
+  }  
+  .goo>p{
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+ 

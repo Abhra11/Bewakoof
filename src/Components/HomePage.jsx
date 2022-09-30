@@ -2,12 +2,16 @@ import React from "react";
 import {Swiperr,Swiperr2,Swiperr3,Swiperr4} from "../Swiper&Data/Swiper";
 import {Data1,Data2,Data3, Data4,Data5} from "../Swiper&Data/data1";
 import Header from "./Header";
+import { Link } from "react-router-dom";
 
 function HomePage(){
     return <>
         <Header/>
-        <div className="nav2" style={{display:'flex', justifyContent:'center' , justifyContent:'space-around',height:'70px',width:'40%', margin:'auto', marginBottom:'0px' }}>
-            <p style={{ fontSize:'17px', fontWeight:'bold', borderBottom:'1px solid #ffd835', borderWidth:'4px',width:'110px' ,textAlign:'center',}}>MEN</p>
+        <div className="nav2" style={{marginTop:'20px',display:'flex', justifyContent:'center' , justifyContent:'space-around',height:'40px',width:'40%', margin:'auto', marginBottom:'0px' }}>
+          <Link to='/product'>
+            <p style={{ fontSize:'17px', fontWeight:'bold',borderRight:'0px',borderTop:'0px',borderLeft:'0px', borderBottom:'1px solid #ffd835', borderWidth:'4px',width:'110px' ,textAlign:'center',}}>MEN</p>
+          </Link>
+            {/* <p style={{ fontSize:'17px', fontWeight:'bold',borderRight:'0px',borderTop:'0px',borderLeft:'0px', borderBottom:'1px solid #ffd835', borderWidth:'4px',width:'110px' ,textAlign:'center',}}>MEN</p> */}
             <p style={{ fontSize:'17px'}}>WOMEN</p>
             <p style={{ fontSize:'17px'}}>ACCESSORIES</p>
         </div>
