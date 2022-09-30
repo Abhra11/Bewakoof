@@ -1,38 +1,91 @@
 .App {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+   
+    font-family: montserrat, sans-serif;
+    
+}
+
+#slider{
+  background-color: #e8f3e5;
+    height: 50px;
+    color: black;
+    display: grid;
+    margin-top: 5px;
+    font-weight: bold;
+    grid-template-columns:  100%;
+    overflow: hidden;
+}
+
+#slider>p{
+  margin-top: 20px;
+  animation: blackslide 7s linear infinite;
+  
+  overflow: hidden;
+}
+
+@keyframes blackslide{
+  0%{
+    margin-left: 100%
+ }
+
+
+ 
+}
+
+
+
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#nav{
+
+  position: sticky;
+  top: 0px;
+  background: white;
+  z-index: 2;
+  
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
+
