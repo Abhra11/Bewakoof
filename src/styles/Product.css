@@ -1,0 +1,29 @@
+.parentP{
+    width: 80%;
+    margin: auto;
+}
+
+.raman{
+    width: 180px;
+    border-bottom: 1px solid;
+    font-size: 14px;
+    height: 40px;
+    border-color: 
+    #d3d3d3;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.cart{
+    border: 1px ;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: 
+    #ffd84d;
+    margin-top: 5px;
+}
