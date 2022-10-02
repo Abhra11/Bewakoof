@@ -1,6 +1,9 @@
 import React from "react";
 import Header from '../Components/Header'
 import "../styles/Product.css"
+import { cartContext } from "../CartContext/CartContextProvider";
+import { useContext } from "react";
+import { addItem } from "../CartContext/action";
 
 const data=[
     {
@@ -88,10 +91,21 @@ const data=[
   }
   ]
 function Product(){
+    const {cartState, cartDispatch}= useContext(cartContext)
+
+    
+    
+        const handleAdd=(data)=>{
+            cartDispatch(addItem(data));
+            console.log(cartState)
+          }
+    
+    
+      
     return <>
     <Header/>
 
-    <div className="parent">
+    <div className="parentP">
         <p style={{'fontSize':'12px', 'marginTop':'10px'}}>Home  /  Men Clothing</p>
         <p style={{'fontSize':'24px', 'marginTop':'24px', fontWeight:'bold', borderBottom:'1px solid', width:'20%'}}>Men Clothing (15)</p>
         <div>
@@ -195,6 +209,7 @@ function Product(){
                                     <p style={{textDecoration: 'line-through', color:'#979797 ', fontSize:''}}>{`₹${ele.dPrice}`}</p>
                                 </div>
                                 <p style={{width:"150px",'fontSize':'13px', "fontWeight":'bold','background':'#f7f7f7 '}}>{`₹${ele.price-69} for Tribe Members`}</p>
+                                <button className="cart" onClick={()=>handleAdd(ele)}>Add to Cart 🛒</button>
                             </div>
                             
                         ))}

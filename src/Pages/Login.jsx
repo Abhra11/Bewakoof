@@ -6,6 +6,10 @@ import {ViewOffIcon, EmailIcon, PhoneIcon } from "@chakra-ui/icons";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { AppContext } from "../Context/AppContext";
+import { useContext } from "react";
+
+
 
 
 const getData=(data={})=>{
@@ -19,6 +23,7 @@ function Login(){
     const [email,setEmail]= useState('');
     const [password,setPassword]= useState('');
     const data={email,password};
+    const {authState,loginUser}= useContext(AppContext)
     let navigate=useNavigate();
 
     const handleSubmit= async()=>{
@@ -26,12 +31,24 @@ function Login(){
             getData(data).then((res)=>{
                 console.log(res.data.token)
                 if(res.data.token){
-                    navigate('/')
+                  
+                   navigate('/product')
+                   loginUser(res.data.token=='QpwL5tke4Pnpja7X4')
+                   alert("Login Successful")
+                      
+                    
+
+                   
+                   
+                   
+                }else{
+                    console.log('hi')
                 }
             })
         }
         catch(err){
-            console.lof(err)
+            console.log(err)
+            alert('Wrong Password')
         }
     }
 

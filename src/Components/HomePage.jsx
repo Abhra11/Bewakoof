@@ -3,6 +3,7 @@ import {Swiperr,Swiperr2,Swiperr3,Swiperr4} from "../Swiper&Data/Swiper";
 import {Data1,Data2,Data3, Data4,Data5} from "../Swiper&Data/data1";
 import Header from "./Header";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 function HomePage(){
     return <>
@@ -36,7 +37,7 @@ function HomePage(){
         <div style={{marginTop:'20px'}}>
             <Swiperr2/>
         </div>
-        <p  style={{textAlign:'center', fontSize:'23px', fontWeight:'bold' }}>BEST BARGAIN CORNER</p>
+        <p  style={{textAlign:'center', fontSize:'23px', fontWeight:'bold',height:'50px' }}>BEST BARGAIN CORNER</p>
 
         <div style={{marginTop:'-20px'}}>
          <Data4/>
@@ -48,10 +49,10 @@ function HomePage(){
         <a style={{marginLeft:'48%', fontSize:'12.5px',color:'#52afbc ', fontWeight:'bold' }} href="">VIEW ALL</a>
         <h3  style={{textAlign:'center', fontSize:'23px', }}>THE STOOPID COLLECTION</h3>
         <Data5/>
-        <img style={{marginTop:'', width:'100%'}} src="https://images.bewakoof.com/uploads/grid/app/desktop---strip-1440---x-150---tribe-1634552003.png"  />
+        <img style={{marginTop:'', width:'100%'}} src="https://images.bewakoof.com/uploads/grid/app/desktop---strip-1440---x-150---tribe-1634552003.png" alt="Error"  />
         <p style={{textAlign:'center', fontSize:'19px',fontWeight:'bold' }}>Customize your T-shirts</p>
-        <img style={{marginTop:'', width:'100%'}} src="https://images.bewakoof.com/uploads/grid/app/design-survey-desktop-ticker-banner-1646808890.gif"  />
- 
+        <img style={{marginTop:'', width:'100%'}} src="https://images.bewakoof.com/uploads/grid/app/design-survey-desktop-ticker-banner-1646808890.gif" alt="Error" />
+        <Footer/>
     </>
 }
 

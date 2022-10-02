@@ -105,7 +105,7 @@ const data3=[
 },
 {
   id:9,
-  url:'',
+  url:'https://images.bewakoof.com/t320/don-t-grow-up-half-sleeve-t-shirt-544706-1664256006-1.jpg',
   price:456,
   dPrice:999,
  },
@@ -293,7 +293,7 @@ const Swiperr4 = () => {
       <div>
         {data4.map(ele=>(
           
-          <SwiperSlide key={ele.id}><img width={'300px'} src={ele.url} alt=""  />
+          <SwiperSlide key={ele.id}><img width={'300px'} src={ele.url} alt="ERROR"  />
           <div style={{display:'flex', gap:'30px'}}>
           <p style={{fontWeight:'bold', fontSize:'18px'}}>{`₹${ele.price}`}</p>
           <p style={{textDecoration: 'line-through', color:'#979797 ', fontSize:''}}>{ele.dPrice}</p>

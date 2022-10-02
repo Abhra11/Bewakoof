@@ -1,4 +1,4 @@
-import { border } from "@chakra-ui/react";
+
 import React from "react";
 
     const data1=[

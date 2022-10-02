@@ -1,4 +1,4 @@
-.parent{
+.parentP{
     width: 80%;
     margin: auto;
 }
@@ -16,4 +16,14 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
+}
+.cart{
+    border: 1px ;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: 
+    #ffd84d;
+    margin-top: 5px;
 }

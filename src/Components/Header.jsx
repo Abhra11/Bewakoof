@@ -22,7 +22,7 @@ function Header(){
   </div>
 
   <div style={{display:"flex", justifyContent:'space-around', borderBottom:"1px solid"}}>
-    <div style={{display:'flex',gap:'30px', justifyContent:"space-between"}}>
+    <div style={{display:'flex',gap:'30px', justifyContent:"space-between", }}>
       
       <Link to="/">
         <img width="200px" src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg" alt="" />
@@ -37,11 +37,11 @@ function Header(){
       <p>MOBILE COVERS</p>
     </div>
 
-    <div style={{display:'flex',gap:'30px', justifyContent:"space-between" }}>
+    <div style={{display:'flex',gap:'30px', justifyContent:"space-between",   }}>
       <Stack  w={'300px'} >
       <InputGroup>
       
-        <Input type='tel' placeholder='🔍 Search by Product, category or collection' h={'40px'} w={'300px'} mt="8px" style={{background:'#eaeaea',border:'none',borderRadius:'10px'}}  />
+        <Input  type='tel' placeholder='🔍 Search by Product, category or collection' h={'30px'} w={'300px'} mt="8px" style={{background:'#eaeaea',border:'none',borderRadius:'10px',}}  />
       </InputGroup>
 
   
@@ -50,8 +50,12 @@ function Header(){
       <Link to='/login'> <p>Login</p></Link>
       
       <p>♡</p>
-      <img  height={'35px'} width="40px" src="https://cdn-icons-png.flaticon.com/128/126/126515.png" alt="" />
-      <img height={'35px'} width={'40px'} src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="" />
+      
+      <Link to='/cart'>
+      <img   width="30px" src="https://cdn-icons-png.flaticon.com/128/126/126515.png" alt="" />
+      </Link>
+      
+      <img style={{'marginTop':'-5px'}} width={'50px'} src="https://cdn-icons-png.flaticon.com/128/6211/6211382.png" alt="" />
     </div>
 
     <div>
